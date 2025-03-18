@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 //Pengmanggilan Data Log In
 $routes->get('/', 'Home::index');
-$routes->get('LoginView', 'LoginController::index');
+$routes->get('Login', 'LoginController::index');
 $routes->post('LoginView/authenticate', 'LoginController::authenticate');
 
 //Pemanggilan Data Log Out
@@ -13,7 +13,6 @@ $routes->get('logout', 'LoginController::logout');
 
 //Pemanggilan Data Dashboard
 $routes->get('dashboard', 'admin\Dashboard::index');
-
 
 // Pemanggilan Data Pegawai
 $routes->get('Pegawai', 'admin\Pegawai::index');
@@ -25,7 +24,7 @@ $routes->get('Pegawai/delete/(:num)', 'Pegawai::delete/$1');
 $routes->setAutoRoute(true);
 
 //Pemanggilan Data Perjalanan Dinas
-$routes->get('PerjalananDinas', 'pegawai\PerjalananDinas::index');
+$routes->get('PerjalananDinas', 'Pegawai\PerjalananDinas::index');
 $routes->post('/PerjalananDinas/store', 'PerjalananDinas::store');
 $routes->post('/PerjalananDinas/update/(:num)', 'PerjalananDinas::update/$1');
 $routes->post('/PerjalananDinas/delete/(:num)', 'PerjalananDinas::delete/$1');

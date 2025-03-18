@@ -17,7 +17,6 @@
                 <div class="auth-form-container text-start">
                     <form action="<?= site_url('LoginView/authenticate'); ?>" method="post">
                     
-                    
                         <?= csrf_field() ?> <!-- Ini untuk keamanan CSRF -->
                         <div class="username mb-3">
                             <label class="sr-only" for="signin-username">Username</label>

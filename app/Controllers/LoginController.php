@@ -35,7 +35,7 @@ class LoginController extends Controller
             session()->set('loggedIn', true);
             session()->set('userId', $akun['Id_Akun']);
             session()->set('username', $akun['Username']);
-
+            
             return redirect()->to('/Dashboard'); // Redirect ke route dashboard
         } else {
             return redirect()->to('/LoginView')->withInput()->with('error', 'Username atau Password salah.');

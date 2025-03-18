@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
+
+use CodeIgniter\Controller;
 
 use App\Models\AkunModel;
 
-class AkunController extends BaseController
+class AkunController extends Controller
 {
     protected $akunModel;
 
@@ -16,7 +18,7 @@ class AkunController extends BaseController
     public function index()
     {
         $data['akun'] = $this->akunModel->findAll();
-        return view('akun', $data);
+        return view('admin/akun', $data);
     }
 
     public function save($id_akun = null)

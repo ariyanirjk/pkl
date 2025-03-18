@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\pegawai;
 
 use App\Models\PerjalananDinasModel;
 use App\Models\PengajuanModel; // Menambahkan model Pengajuan
@@ -21,7 +21,7 @@ class PerjalananDinas extends Controller
 {
     $data['perjalanan'] = $this->PerjalananDinasModel->asArray()->findAll(); // Ambil semua data perjalanan dinas
     $data['pengajuan'] = $this->PerjalananDinasModel->getPengajuan(); // Ambil semua data pengajuan untuk dropdown
-    return view('PerjalananDinas', $data); // Pastikan view yang digunakan sudah sesuai
+    return view('pegawai/PerjalananDinas', $data); // Pastikan view yang digunakan sudah sesuai
 }
 
 

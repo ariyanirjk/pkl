@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Admin;
 
 use App\Models\PegawaiModel;
 use CodeIgniter\Controller;
@@ -18,7 +18,7 @@ class Pegawai extends Controller
     public function index()
     {
         $data['Pegawai'] = $this->pegawaiModel->findAll(); // Ambil semua data pegawai
-        return view('Pegawai', $data);
+        return view('admin/Pegawai', $data);
     }
 
     // Menampilkan form tambah/edit pegawai
@@ -50,7 +50,7 @@ class Pegawai extends Controller
         'Status_Pengajuan'  => $this->request->getPost('Status_Pengajuan')
     ]);
 
-    return redirect()->to('/pegawai')->with('success', 'Data pegawai berhasil ditambahkan!');
+    return redirect()->to('/Pegawai')->with('success', 'Data pegawai berhasil ditambahkan!');
 }
 
 public function update($id_pegawai)
@@ -62,7 +62,7 @@ public function update($id_pegawai)
         'Status_Pengajuan'  => $this->request->getPost('Status_Pengajuan')
     ]);
 
-    return redirect()->to('/pegawai')->with('success', 'Data pegawai berhasil diperbarui!');
+    return redirect()->to('/Pegawai')->with('success', 'Data pegawai berhasil diperbarui!');
 }
 
 

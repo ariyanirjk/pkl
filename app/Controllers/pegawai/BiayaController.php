@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\pegawai;
 
 use App\Models\BiayaModel;
 use CodeIgniter\Controller;
@@ -17,7 +17,7 @@ class BiayaController extends Controller
     public function index()
     {
         $data['Biaya'] = $this->BiayaModel->findAll();
-        return view('Biaya', $data);
+        return view('pegawai/Biaya', $data);
     }
 
     // 🔹 Menyimpan Data Baru

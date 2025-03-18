@@ -69,7 +69,7 @@
 				<nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
 					<ul class="app-menu list-unstyled accordion" id="menu-accordion">
 					<li class="nav-item">
-    <a href="<?= base_url('/Dashboard'); ?>" class="nav-link">
+    <a href="<?= base_url('/dashboard'); ?>" class="nav-link">
         <span class="nav-icon">
             <!-- Ikon Rumah dari Bootstrap Icons -->
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

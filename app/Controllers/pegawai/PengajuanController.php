@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\pegawai;
 
 use App\Models\PengajuanModel;
 use CodeIgniter\Controller;
@@ -17,7 +17,7 @@ class PengajuanController extends Controller
     public function index()
     {
         $data['Pengajuan'] = $this->PengajuanModel->findAll();
-        return view('Pengajuan', $data);
+        return view('pegawai/Pengajuan', $data);
     }
 
     public function store()

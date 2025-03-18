@@ -1,0 +1,1524 @@
+INFO - 2025-02-03 02:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 02:57:23 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PerjalananDinas->store()
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-02-03 02:57:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'field list'
+[Method: POST, Route: PerjalananDinas/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `perjalanan_dinas` (`lokasi`, `tgl_mulai`, `tgl_selesai`, `status`) VALUES (:lokasi:, :tgl_mulai:, :tgl_selesai:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 02:57:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `perjalanan_dinas` (`lokasi`, `tgl_mulai`, `tgl_selesai`, `status`) VALUES (\'Singapura\', \'2025-02-05\', \'2025-02-10\', \'Merah\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `perjalanan_dinas` (`lokasi`, `tgl_mulai`, `tgl_selesai`, `status`) VALUES (\'Singapura\', \'2025-02-05\', \'2025-02-10\', \'Merah\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `perjalanan_dinas` (`lokasi`, `tgl_mulai`, `tgl_selesai`, `status`) VALUES (:lokasi:, :tgl_mulai:, :tgl_selesai:, :status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 02:57:23 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `perjalanan_dinas` (`lokasi`, `tgl_mulai`, `tgl_selesai`, `status`) VALUES (\'Singapura\', \'2025-02-05\', \'2025-02-10\', \'Merah\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `perjalanan_dinas` (`lokasi`, `tgl_mulai`, `tgl_selesai`, `status`) VALUES (\'Singapura\', \'2025-02-05\', \'2025-02-10\', \'Merah\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `perjalanan_dinas` (`lokasi`, `tgl_mulai`, `tgl_selesai`, `status`) VALUES (\'Singapura\', \'2025-02-05\', \'2025-02-10\', \'Merah\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `perjalanan_dinas` (`lokasi`, `tgl_mulai`, `tgl_selesai`, `status`) VALUES (:lokasi:, :tgl_mulai:, :tgl_selesai:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 02:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 02:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 02:58:18 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 30.
+ 1 APPPATH\Views\PerjalananDinas.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:01:09 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 30.
+ 1 APPPATH\Views\PerjalananDinas.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:01:33 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 30.
+ 1 APPPATH\Views\PerjalananDinas.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:01:36 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 30.
+ 1 APPPATH\Views\PerjalananDinas.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:07:07 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 34.
+ 1 APPPATH\Views\PerjalananDinas.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:10:02 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 34.
+ 1 APPPATH\Views\PerjalananDinas.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:10:37 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 34.
+ 1 APPPATH\Views\PerjalananDinas.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:10:38 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 34.
+ 1 APPPATH\Views\PerjalananDinas.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:10:39 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 34.
+ 1 APPPATH\Views\PerjalananDinas.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:13:10 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 53.
+ 1 APPPATH\Views\PerjalananDinas.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 53)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:14:12 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 53.
+ 1 APPPATH\Views\PerjalananDinas.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 53)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:14:14 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 53.
+ 1 APPPATH\Views\PerjalananDinas.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 53)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 03:14:15 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 53.
+ 1 APPPATH\Views\PerjalananDinas.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php', 53)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\PerjalananDinas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 5 APPPATH\Controllers\PerjalananDinas.php(20): view('PerjalananDinas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 03:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 03:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 05:18:56 --> Error: Class "App\Models\PengajuanModel" not found
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Controllers\PerjalananDinas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\PerjalananDinas->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 05:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 05:33:35 --> mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-03 05:33:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+[Method: GET, Route: Pengajuan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:33:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:33:35 --> [Caused by] mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 05:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 05:36:06 --> mysqli_sql_exception: Unknown column 'Status_Persetujuan' in 'field list' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-02-03 05:36:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Status_Persetujuan' in 'field list'
+[Method: POST, Route: Pengajuan/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:36:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Status_Persetujuan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:06\', \'2025-02-03 05:36:06\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:06\', \'2025-02-03 05:36:06\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:36:06 --> [Caused by] mysqli_sql_exception: Unknown column 'Status_Persetujuan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:06\', \'2025-02-03 05:36:06\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:06\', \'2025-02-03 05:36:06\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:06\', \'2025-02-03 05:36:06\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+ERROR - 2025-02-03 05:36:57 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-02-03 05:36:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Pengajuan/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:36:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:57\', \'2025-02-03 05:36:57\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:57\', \'2025-02-03 05:36:57\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:36:57 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:57\', \'2025-02-03 05:36:57\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:57\', \'2025-02-03 05:36:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:36:57\', \'2025-02-03 05:36:57\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+ERROR - 2025-02-03 05:38:02 --> mysqli_sql_exception: Column 'Id_Pegawai' cannot be null in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-02-03 05:38:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Id_Pegawai' cannot be null
+[Method: POST, Route: Pengajuan/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:38:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Id_Pegawai' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:38:02\', \'2025-02-03 05:38:02\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:38:02\', \'2025-02-03 05:38:02\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:38:02 --> [Caused by] mysqli_sql_exception: Column 'Id_Pegawai' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:38:02\', \'2025-02-03 05:38:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:38:02\', \'2025-02-03 05:38:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Jepang\', NULL, \'2025-02-10\', \'2025-02-14\', \'Disetujui\', \'dinas ini dilakukan untuk kegiatan monitoring alat berat yang ada di jepang\', \'Disetujui\', \'2025-02-03 05:38:02\', \'2025-02-03 05:38:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 05:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 05:40:27 --> mysqli_sql_exception: Column 'Id_Pegawai' cannot be null in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-02-03 05:40:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Id_Pegawai' cannot be null
+[Method: POST, Route: Pengajuan/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:40:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Id_Pegawai' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:40:27\', \'2025-02-03 05:40:27\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:40:27\', \'2025-02-03 05:40:27\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:40:27 --> [Caused by] mysqli_sql_exception: Column 'Id_Pegawai' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:40:27\', \'2025-02-03 05:40:27\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:40:27\', \'2025-02-03 05:40:27\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:40:27\', \'2025-02-03 05:40:27\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 05:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 05:41:05 --> mysqli_sql_exception: Unknown column 'Status_Persetujuan' in 'field list' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-02-03 05:41:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Status_Persetujuan' in 'field list'
+[Method: POST, Route: Pengajuan/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:41:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Status_Persetujuan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:41:05\', \'2025-02-03 05:41:05\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:41:05\', \'2025-02-03 05:41:05\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:41:05 --> [Caused by] mysqli_sql_exception: Unknown column 'Status_Persetujuan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:41:05\', \'2025-02-03 05:41:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:41:05\', \'2025-02-03 05:41:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (NULL, \'Surabaya\', NULL, \'2025-02-05\', \'2025-02-09\', \'Disetujui\', \'Saya mengajukan ini untuk memonitoring alat berat yang ada di surabaya dan menjalani pelatihan\', NULL, \'2025-02-03 05:41:05\', \'2025-02-03 05:41:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan` (`Id_Pegawai`, `Lokasi`, `Tgl_Pengajuan`, `Tgl_Mulai`, `Tgl_Selesai`, `Status`, `Keterangan`, `Status_Persetujuan`, `created_at`, `updated_at`) VALUES (:Id_Pegawai:, :Lokasi:, :Tgl_Pengajuan:, :Tgl_Mulai:, :Tgl_Selesai:, :Status:, :Keterangan:, :Status_Persetujuan:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PengajuanController.php(36): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 05:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 05:45:33 --> mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-03 05:45:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+[Method: GET, Route: PerjalananDinas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:45:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:45:33 --> [Caused by] mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+ERROR - 2025-02-03 05:45:57 --> mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-03 05:45:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+[Method: GET, Route: PerjalananDinas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:45:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:45:57 --> [Caused by] mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+ERROR - 2025-02-03 05:45:59 --> mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-03 05:45:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+[Method: GET, Route: PerjalananDinas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:45:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:45:59 --> [Caused by] mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+ERROR - 2025-02-03 05:47:39 --> mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-03 05:47:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+[Method: GET, Route: PerjalananDinas]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:47:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:47:39 --> [Caused by] mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `Status` = \'Disetujui\'
+OR `Status` = \'Proses\'
+AND `pengajuan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `Status` = :Status:
+OR `Status` = :Status.1:
+AND `pengajuan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PerjalananDinas.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 05:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 05:48:49 --> mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-03 05:48:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+[Method: GET, Route: Pengajuan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:48:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:48:49 --> [Caused by] mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 05:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 05:49:03 --> mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-02-03 05:49:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+[Method: GET, Route: Pengajuan]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:49:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 05:49:03 --> [Caused by] mysqli_sql_exception: Unknown column 'pengajuan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan`
+WHERE `pengajuan`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PengajuanController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengajuanController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengajuanController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 05:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 05:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 06:03:20 --> ParseError: Unmatched ')'
+[Method: GET, Route: PerjalananDinas]
+in APPPATH\Views\PerjalananDinas.php on line 35.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('PerjalananDinas', [], true)
+ 3 APPPATH\Controllers\PerjalananDinas.php(24): view('PerjalananDinas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 06:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-03 06:09:46 --> mysqli_sql_exception: Column 'Id_Pengajuan' cannot be null in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\PerjalananDinas.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\PerjalananDinas->store()
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-02-03 06:09:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Id_Pengajuan' cannot be null
+[Method: POST, Route: PerjalananDinas/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `perjalanan_dinas` (`status`, `Id_Pengajuan`) VALUES (:status:, :Id_Pengajuan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PerjalananDinas.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 06:09:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Id_Pengajuan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `perjalanan_dinas` (`status`, `Id_Pengajuan`) VALUES (\'Belum Diserahkan\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `perjalanan_dinas` (`status`, `Id_Pengajuan`) VALUES (\'Belum Diserahkan\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `perjalanan_dinas` (`status`, `Id_Pengajuan`) VALUES (:status:, :Id_Pengajuan:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PerjalananDinas.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 06:09:46 --> [Caused by] mysqli_sql_exception: Column 'Id_Pengajuan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `perjalanan_dinas` (`status`, `Id_Pengajuan`) VALUES (\'Belum Diserahkan\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `perjalanan_dinas` (`status`, `Id_Pengajuan`) VALUES (\'Belum Diserahkan\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `perjalanan_dinas` (`status`, `Id_Pengajuan`) VALUES (\'Belum Diserahkan\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `perjalanan_dinas` (`status`, `Id_Pengajuan`) VALUES (:status:, :Id_Pengajuan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PerjalananDinas.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PerjalananDinas->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PerjalananDinas))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 06:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-03 06:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-03 06:23:39 --> ErrorException: Cannot declare class App\Controllers\Pegawai, because the name is already in use
+[Method: GET, Route: Pegawai]
+in APPPATH\Models\PegawaiModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-02-03 06:24:28 --> ErrorException: Cannot declare class App\Controllers\PegawaiModel because the name is already in use
+[Method: GET, Route: Pegawai]
+in APPPATH\Models\PegawaiModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-02-03 06:40:54 --> ErrorException: Undefined variable $pegawai
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 27.
+ 1 APPPATH\Views\Pegawai.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 06:50:36 --> ErrorException: Undefined variable $pegawai
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 27.
+ 1 APPPATH\Views\Pegawai.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 06:52:37 --> ErrorException: Undefined variable $pegawai
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 06:54:14 --> ErrorException: Undefined variable $pegawai
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 06:55:15 --> ErrorException: Undefined variable $pegawai
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 06:55:54 --> ErrorException: Undefined array key "Status_Pengajuan"
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Status_Pengajuan"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-02-03 06:56:09 --> ErrorException: Undefined array key "Status_Pengajuan"
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 31.
+ 1 APPPATH\Views\Pegawai.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Status_Pengajuan"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-02-03 06:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,258 @@
+INFO - 2025-01-28 01:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 01:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 01:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 01:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 02:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 02:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 02:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 02:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 02:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-28 02:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-28 02:31:41 --> ErrorException: Undefined variable $pegawai
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 25.
+ 1 APPPATH\Views\Pegawai.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 02:44:04 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: pegawai/form]
+in APPPATH\Config\Routes.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 02:54:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Pegawai/Pegawaiform.php"
+[Method: GET, Route: pegawai/form]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Pegawai/Pegawaiform.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai/Pegawaiform', [], true)
+ 3 APPPATH\Controllers\pegawai.php(38): view('Pegawai/Pegawaiform', [])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 02:55:55 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('Pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 02:59:09 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('Pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 02:59:11 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('Pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 02:59:54 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('Pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 02:59:55 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('Pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:01:06 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('Pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:01:06 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('Pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:01:45 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('Pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:04:06 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:04:07 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:07:42 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:10:37 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:11:18 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/form]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(38): view('pegawaiform', [])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->form()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-28 03:15:42 --> ErrorException: Undefined variable $pegawai
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 25.
+ 1 APPPATH\Views\Pegawai.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 25)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('Pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')

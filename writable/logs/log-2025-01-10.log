@@ -1,0 +1,626 @@
+CRITICAL - 2025-01-10 00:48:29 --> ErrorException: Undefined array key "Status_Pengajuan"
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 30.
+ 1 APPPATH\Views\Pegawai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Status_Pengajuan"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 00:48:57 --> ErrorException: Undefined array key "Status_Pengajuan"
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 30.
+ 1 APPPATH\Views\Pegawai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Status_Pengajuan"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-01-10 00:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 00:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-10 01:06:43 --> ErrorException: Undefined property: App\Controllers\akuncontroller::$db
+[Method: POST, Route: akun/save]
+in APPPATH\Controllers\akuncontroller.php on line 56.
+ 1 APPPATH\Controllers\akuncontroller.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\akuncontroller::$db', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Controllers\\akuncontroller.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\akuncontroller->save()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akuncontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 01:06:59 --> ErrorException: Undefined property: App\Controllers\akuncontroller::$db
+[Method: POST, Route: akun/save/5]
+in APPPATH\Controllers\akuncontroller.php on line 53.
+ 1 APPPATH\Controllers\akuncontroller.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\akuncontroller::$db', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Controllers\\akuncontroller.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\akuncontroller->save('5')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akuncontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 01:07:21 --> ErrorException: Undefined property: App\Controllers\akuncontroller::$db
+[Method: POST, Route: akun/save]
+in APPPATH\Controllers\akuncontroller.php on line 56.
+ 1 APPPATH\Controllers\akuncontroller.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\akuncontroller::$db', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Controllers\\akuncontroller.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\akuncontroller->save()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akuncontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 01:09:54 --> ErrorException: Undefined property: App\Controllers\akuncontroller::$db
+[Method: POST, Route: akun/save]
+in APPPATH\Controllers\akuncontroller.php on line 56.
+ 1 APPPATH\Controllers\akuncontroller.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\akuncontroller::$db', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Controllers\\akuncontroller.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\akuncontroller->save()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akuncontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 01:10:08 --> ErrorException: Undefined property: App\Controllers\akuncontroller::$db
+[Method: POST, Route: akun/save]
+in APPPATH\Controllers\akuncontroller.php on line 56.
+ 1 APPPATH\Controllers\akuncontroller.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\akuncontroller::$db', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Controllers\\akuncontroller.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\akuncontroller->save()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akuncontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+INFO - 2025-01-10 01:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 01:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-10 02:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-10 02:18:00 --> ErrorException: Undefined array key "Status_Pengajuan"
+[Method: GET, Route: Pegawai]
+in APPPATH\Views\Pegawai.php on line 30.
+ 1 APPPATH\Views\Pegawai.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Status_Pengajuan"', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\Pegawai.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai', [], true)
+ 5 APPPATH\Controllers\pegawai.php(20): view('pegawai', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:28:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: Pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(47): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:39:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/pegawai.php"
+[Method: GET, Route: Pegawai]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/pegawai.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/pegawai', [], true)
+ 3 APPPATH\Controllers\pegawai.php(20): view('pegawai/pegawai', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:42:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(50): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:45:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(50): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:45:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(50): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:45:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(50): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:46:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(50): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+ERROR - 2025-01-10 02:46:22 --> mysqli_sql_exception: Unknown column 'Updated_At' in 'field list' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `Pegawai...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Pegawai...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Pegawai...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `Pegawai...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\pegawai.php(67): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\pegawai->update('1')
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-10 02:46:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Updated_At' in 'field list'
+[Method: POST, Route: pegawai/update/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `Pegawai` SET `Nama` = :Nama:, `Jabatan` = :Jabatan:, `No_Tlp` = :No_Tlp:, `Status_Pengajuan` = :Status_Pengajuan:, `Updated_At` = :Updated_At:
+WHERE `Pegawai`.`Id_Pegawai` IN :Pegawai.Id_Pegawai:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\pegawai.php(67): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:46:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Updated_At' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'081234567890\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 02:46:22\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'081234567890\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 02:46:22\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `Pegawai` SET `Nama` = :Nama:, `Jabatan` = :Jabatan:, `No_Tlp` = :No_Tlp:, `Status_Pengajuan` = :Status_Pengajuan:, `Updated_At` = :Updated_At:
+WHERE `Pegawai`.`Id_Pegawai` IN :Pegawai.Id_Pegawai:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\pegawai.php(67): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:46:22 --> [Caused by] mysqli_sql_exception: Unknown column 'Updated_At' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'081234567890\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 02:46:22\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'081234567890\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 02:46:22\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'081234567890\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 02:46:22\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `Pegawai` SET `Nama` = :Nama:, `Jabatan` = :Jabatan:, `No_Tlp` = :No_Tlp:, `Status_Pengajuan` = :Status_Pengajuan:, `Updated_At` = :Updated_At:
+WHERE `Pegawai`.`Id_Pegawai` IN :Pegawai.Id_Pegawai:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\pegawai.php(67): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->update('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:46:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(50): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:50:43 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Views\Pegawai.php on line 26.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai', [], true)
+ 4 APPPATH\Controllers\pegawai.php(56): view('pegawai', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:52:06 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Views\Pegawai.php on line 26.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai', [], true)
+ 4 APPPATH\Controllers\pegawai.php(56): view('pegawai', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:52:07 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Views\Pegawai.php on line 26.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai', [], true)
+ 4 APPPATH\Controllers\pegawai.php(56): view('pegawai', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:57:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/form.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/form', [], true)
+ 3 APPPATH\Controllers\pegawai.php(56): view('pegawai/form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 02:57:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/form.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/form', [], true)
+ 3 APPPATH\Controllers\pegawai.php(56): view('pegawai/form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:05:27 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\View\View.php on line 442.
+ 1 APPPATH\Views\pegawaiform.php(29): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(56): view('pegawaiform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:06:54 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Views\pegawaiform.php on line 2.
+ 1 APPPATH\Views\pegawaiform.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(56): view('pegawaiform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+ERROR - 2025-01-10 03:19:11 --> mysqli_sql_exception: Unknown column 'Updated_At' in 'field list' in C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Perjalanan Dinas\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `Pegawai...', 0)
+#1 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Pegawai...')
+#2 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Pegawai...')
+#3 C:\xampp\htdocs\Perjalanan Dinas\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `Pegawai...', Array, false)
+#4 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Perjalanan Dinas\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\Perjalanan Dinas\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\Perjalanan Dinas\app\Controllers\pegawai.php(41): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(933): App\Controllers\pegawai->save('1')
+#9 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+#10 C:\xampp\htdocs\Perjalanan Dinas\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Perjalanan Dinas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Perjalanan Dinas\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Perjalanan Dinas\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-01-10 03:19:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Updated_At' in 'field list'
+[Method: POST, Route: pegawai/save/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `Pegawai` SET `Nama` = :Nama:, `Jabatan` = :Jabatan:, `No_Tlp` = :No_Tlp:, `Status_Pengajuan` = :Status_Pengajuan:, `Updated_At` = :Updated_At:
+WHERE `Pegawai`.`Id_Pegawai` IN :Pegawai.Id_Pegawai:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\pegawai.php(41): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->save('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:19:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Updated_At' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'0812345\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 03:19:11\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'0812345\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 03:19:11\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `Pegawai` SET `Nama` = :Nama:, `Jabatan` = :Jabatan:, `No_Tlp` = :No_Tlp:, `Status_Pengajuan` = :Status_Pengajuan:, `Updated_At` = :Updated_At:
+WHERE `Pegawai`.`Id_Pegawai` IN :Pegawai.Id_Pegawai:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\pegawai.php(41): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->save('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:19:11 --> [Caused by] mysqli_sql_exception: Unknown column 'Updated_At' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'0812345\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 03:19:11\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'0812345\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 03:19:11\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `Pegawai` SET `Nama` = \'Putri\', `Jabatan` = \'Manager\', `No_Tlp` = \'0812345\', `Status_Pengajuan` = \'Disetujui\', `Updated_At` = \'2025-01-10 03:19:11\'
+WHERE `Pegawai`.`Id_Pegawai` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `Pegawai` SET `Nama` = :Nama:, `Jabatan` = :Jabatan:, `No_Tlp` = :No_Tlp:, `Status_Pengajuan` = :Status_Pengajuan:, `Updated_At` = :Updated_At:
+WHERE `Pegawai`.`Id_Pegawai` IN :Pegawai.Id_Pegawai:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\pegawai.php(41): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->save('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:33:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(65): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:34:54 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(65): view('pegawaiform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:36:19 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(62): view('pegawaiform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:42:56 --> ErrorException: Undefined property: App\Controllers\pegawai::$pegawai_model
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Controllers\pegawai.php on line 53.
+ 1 APPPATH\Controllers\pegawai.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\pegawai::$pegawai_model', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Controllers\\pegawai.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:46:16 --> BadMethodCallException: Call to undefined method App\Models\PegawaiModel::getById
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\pegawai.php(53): CodeIgniter\Model->__call('getById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:46:37 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(62): view('pegawaiform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:46:42 --> ErrorException: Undefined variable $id_pegawai
+[Method: GET, Route: pegawai/edit/1]
+in APPPATH\Views\pegawaiform.php on line 3.
+ 1 APPPATH\Views\pegawaiform.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_pegawai', 'C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Perjalanan Dinas\\app\\Views\\pegawaiform.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawaiform', [], true)
+ 5 APPPATH\Controllers\pegawai.php(63): view('pegawaiform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:46:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(65): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')
+CRITICAL - 2025-01-10 03:46:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pegawai/edit.php"
+[Method: GET, Route: pegawai/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pegawai/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pegawai/edit', [], true)
+ 3 APPPATH\Controllers\pegawai.php(65): view('pegawai/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\pegawai->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Perjalanan Dinas\\public\\index.php')

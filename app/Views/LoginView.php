@@ -15,7 +15,7 @@
             <h2 class="auth-heading text-center mb-3" style="font-size: 20px;">LOG IN</h2>
 
                 <div class="auth-form-container text-start">
-                    <form action="<?= site_url('LoginView/authenticate'); ?>" method="post">
+                    <form action="<?= site_url('/authenticate'); ?>" method="post">
                     
                         <?= csrf_field() ?> <!-- Ini untuk keamanan CSRF -->
                         <div class="username mb-3">

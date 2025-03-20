@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class BiayaModel extends Model
 {
-    protected $table = 'Biaya'; // Nama tabel di database
+    protected $table = 'biaya'; // Nama tabel di database
     protected $primaryKey = 'Id_Biaya';
     protected $allowedFields = ['Jenis_Biaya', 'Jumlah_Biaya'];
 }

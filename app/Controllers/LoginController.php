@@ -35,16 +35,21 @@ class LoginController extends Controller
             session()->set('loggedIn', true);
             session()->set('userId', $akun['Id_Akun']);
             session()->set('username', $akun['Username']);
-            
-            return redirect()->to('/Dashboard'); // Redirect ke route dashboard
+            session()->set('role', $akun['Role']);
+         // Arahkan pengguna berdasarkan peran (role) menggunakan if-else
+            if ($akun['Role'] == 'Admin') {
+                return redirect()->to('/dashboard');
+            } elseif ($akun['Role'] == 'User') {
+                return redirect()->to('/dashboard');
+            }
         } else {
-            return redirect()->to('/LoginView')->withInput()->with('error', 'Username atau Password salah.');
+            return redirect()->to('/Login')->withInput()->with('error', 'Username atau Password salah.');
         }
     }
 
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/LoginView');
+        return redirect()->to('/Login');
     }
 }

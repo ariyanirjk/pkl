@@ -12,7 +12,6 @@
 <body>
     <h1>Dashboard Perjalanan Dinas United Tractors</h1>
     <p>Anda sudah berhasil Log In <?= session()->get('username'); ?></p>
-    
     <div class="row g-4 mb-4">
         <!-- Total Perjalanan -->
         <div class="col-6 col-lg-3">

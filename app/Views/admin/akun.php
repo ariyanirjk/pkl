@@ -70,9 +70,9 @@
                     </div>
                     <div class="mb-3">
                         <label for="Role" class="form-label">Role</label>
-                        <select class="form-select" id="Role" name="Role" required>
-                            <option value="pegawai">Pegawai</option>
-                            <option value="atasan">Atasan</option>
+                        <select class="form-select" id="Role" name="role" required>
+                            <option value="User">Pegawai</option>
+                            <option value="Admin">Atasan</option>
                         </select>
                     </div>
                 </div>

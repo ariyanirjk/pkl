@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class PengajuanModel extends Model
 {
     // Nama tabel yang akan digunakan
-    protected $table            = 'Pengajuan';
+    protected $table = 'pengajuan';
     
     // Kolom yang diizinkan untuk disimpan/diupdate
     protected $allowedFields    = [

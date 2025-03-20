@@ -25,14 +25,18 @@ class AkunController extends Controller
     {
         $rules = [
             'Username' => 'required|min_length[3]|max_length[20]',
-            'Password' => $id_akun ? 'permit_empty|min_length[6]|max_length[20]' : 'required|min_length[6]|max_length[20]'
+            'Password' => $id_akun ? 'permit_empty|min_length[6]|max_length[20]' : 'required|min_length[6]|max_length[20]',
+            'role' => 'required',
         ];
 
         if (!$this->validate($rules)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        $data = ['Username' => $this->request->getPost('Username')];
+        $data = [
+            'Username' => $this->request->getPost('Username'),
+            'Role' => $this->request->getPost('role')
+            ];
 
         if ($this->request->getPost('Password')) {
             $data['Password'] = password_hash($this->request->getPost('Password'), PASSWORD_DEFAULT);

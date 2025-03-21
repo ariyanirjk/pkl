@@ -12,6 +12,7 @@ class PegawaiModel extends Model
     protected $allowedFields = [
         'Nama', 
         'Jabatan', 
+        'nip', 
         'No_Tlp', 
         'Status_Pengajuan'
     ]; // Kolom yang bisa diisi

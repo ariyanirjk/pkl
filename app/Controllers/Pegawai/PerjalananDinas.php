@@ -1,60 +1,75 @@
 <?php
 
-namespace App\Controllers\pegawai;
+namespace App\Controllers\User;
 
-use App\Models\PerjalananDinasModel;
-use App\Models\PengajuanModel; // Menambahkan model Pengajuan
+use App\Models\PengajuanModel;
 use CodeIgniter\Controller;
 
-class PerjalananDinas extends Controller
+class PengajuanDinasController extends Controller
 {
-    protected $PerjalananDinasModel;
-    protected $PengajuanModel; // Menambahkan properti untuk model Pengajuan
+    protected $PengajuanModel;
+    protected $session;
 
     public function __construct()
     {
-        $this->PerjalananDinasModel = new PerjalananDinasModel();
-        $this->PengajuanModel = new PengajuanModel(); // Inisialisasi model Pengajuan
+        $this->PengajuanModel = new PengajuanModel();
+        $this->session = \Config\Services::session();
     }
 
     public function index()
-{
-    $data['perjalanan'] = $this->PerjalananDinasModel->asArray()->findAll(); // Ambil semua data perjalanan dinas
-    $data['pengajuan'] = $this->PerjalananDinasModel->getPengajuan(); // Ambil semua data pengajuan untuk dropdown
-    return view('pegawai/PerjalananDinas', $data); // Pastikan view yang digunakan sudah sesuai
-}
-
-
-public function store()
-{
-    $this->PerjalananDinasModel->insert([
-        'Lokasi'        => $this->request->getPost('Lokasi'),
-        'Tgl_Mulai'     => $this->request->getPost('Tgl_Mulai'),
-        'Tgl_Selesai'   => $this->request->getPost('Tgl_Selesai'),
-        'status'        => $this->request->getPost('status')
-    ]);
-
-    return redirect()->to('/PerjalananDinas')->with('success', 'Data perjalanan berhasil ditambahkan!');
-}
-
-public function update($id_perjalanan)
-{
-    $this->PerjalananDinasModel->update($id_perjalanan, [
-        'Lokasi'        => $this->request->getPost('Lokasi'),
-        'Tgl_Mulai'     => $this->request->getPost('Tgl_Mulai'),
-        'Tgl_Selesai'   => $this->request->getPost('Tgl_Selesai'),
-        'status'        => $this->request->getPost('status')
-    ]);
-
-    return redirect()->to('/PerjalananDinas')->with('success', 'Data perjalanan berhasil diperbarui!');
-}
-
-
-    public function delete($Id_Perjalanan)
     {
-        // Hapus data perjalanan dinas berdasarkan ID
-        $this->PerjalananDinasModel->delete($Id_Perjalanan);
+        // Pastikan user sudah login
+        if (!$this->session->get('is_logged_in')) {
+            // Redirect ke halaman login user
+            return redirect()->to('/login');  // Ganti /login dengan URL yang benar
+        }
 
-        return redirect()->to('/PerjalananDinas')->with('success', 'Data berhasil dihapus!');
+        $id_pegawai = $this->session->get('id_pegawai'); // Ambil ID pegawai dari session
+        $data['Pengajuan'] = $this->PengajuanModel->where('Id_Pegawai', $id_pegawai)->findAll(); // Ambil pengajuan hanya untuk user ini
+
+        return view('User/PengajuanDinas/Index', $data);
+    }
+
+    public function new()  // Jika menggunakan route /PengajuanDinas/new
+    {
+        // Pastikan user sudah login
+        if (!$this->session->get('is_logged_in')) {
+            // Redirect ke halaman login user
+            return redirect()->to('/login');
+        }
+
+        // Tampilkan view yang berisi form pengajuan dinas
+        return view('User/PengajuanDinas/Form');
+    }
+
+    public function store()
+    {
+        // Pastikan user sudah login
+        if (!$this->session->get('is_logged_in')) {
+            // Redirect ke halaman login user
+            return redirect()->to('/login');
+        }
+
+        $id_pegawai = $this->session->get('id_pegawai'); // Ambil ID pegawai dari session
+
+        $data = [
+            'Id_Pegawai'       => $id_pegawai, // Gunakan ID pegawai dari session
+            'Lokasi'           => $this->request->getPost('Lokasi'),
+            'Tgl_Pengajuan'    => $this->request->getPost('Tgl_Pengajuan'),
+            'Tgl_Mulai'        => $this->request->getPost('Tgl_Mulai'),
+            'Tgl_Selesai'      => $this->request->getPost('Tgl_Selesai'),
+            'Status_Pengajuan' => 'Pending', // Set status default
+            'Keterangan'       => $this->request->getPost('Keterangan'),
+            'Tgl_Persetujuan'  => null // Default null karena belum disetujui
+        ];
+
+        if (!$this->PengajuanModel->insert($data)) {
+            // Menampilkan error jika gagal insert
+            session()->setFlashdata('error', 'Gagal menyimpan data.  Silakan coba lagi.');
+            return redirect()->back()->withInput(); // Kembali ke form dengan data yang sudah diisi
+        }
+
+        session()->setFlashdata('success', 'Pengajuan berhasil disimpan dan menunggu persetujuan admin.');
+        return redirect()->to('/User/PengajuanDinas');
     }
 }

@@ -19,10 +19,10 @@
                 <thead>
                     <tr>
                         <th>No</th>
+                        <th>NIP</th>
                         <th>Nama</th>
                         <th>Jabatan</th>
                         <th>No Telepon</th>
-                        <th>Status Pengajuan</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -31,14 +31,11 @@
                     <?php foreach ($Pegawai as $peg): ?>
                         <tr>
                             <td><?= $no++; ?></td>
+                            <td><?= esc($peg['nip']); ?></td>
                             <td><?= esc($peg['Nama']); ?></td>
                             <td><?= esc($peg['Jabatan']); ?></td>
                             <td><?= esc($peg['No_Tlp']); ?></td>
-                            <td>
-                                <span class="badge <?= $peg['Status_Pengajuan'] == 'Ditolak' ? 'bg-danger' : ($peg['Status_Pengajuan'] == 'Diproses' ? 'bg-warning text-dark' : 'bg-success'); ?>">
-                                    <?= esc($peg['Status_Pengajuan']); ?>
-                                </span>
-                            </td>
+                            
                             <td>
                                 <button class="btn btn-sm btn-warning" onclick="editPegawai(<?= $peg['Id_Pegawai']; ?>, '<?= esc($peg['Nama']); ?>', '<?= esc($peg['Jabatan']); ?>', '<?= esc($peg['No_Tlp']); ?>', '<?= esc($peg['Status_Pengajuan']); ?>')">Edit</button>
                                 <button class="btn btn-sm btn-danger" onclick="confirmDelete(<?= $peg['Id_Pegawai']; ?>)">Hapus</button>
@@ -79,14 +76,6 @@
                         <input type="text" class="form-control" id="No_Tlp" name="No_Tlp" required>
                     </div>
                     
-                    <div class="mb-3">
-                        <label class="form-label">Status Pengajuan</label>
-                        <select class="form-control" id="Status_Pengajuan" name="Status_Pengajuan">
-                            <option value="Diproses">Diproses</option>
-                            <option value="Disetujui">Disetujui</option>
-                            <option value="Ditolak">Ditolak</option>
-                        </select>
-                    </div>
                 </div>
                 
                 <div class="modal-footer">

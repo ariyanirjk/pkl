@@ -37,8 +37,9 @@ $routes->get('/akun/delete/(:num)', 'Admin\AkunController::delete/$1');
 
 //Pemanggilan Data Pengajuan
 $routes->get('/Pengajuan', 'Pegawai\PengajuanController::index'); // Menampilkan daftar pengajuan
+$routes->get('/Pengajuan', 'Admin\PengajuanController::index');
 $routes->get('/Pengajuan/create', 'Pegawai\PengajuanController::create'); // Menampilkan form untuk menambah pengajuan
-$routes->post('/Pengajuan/store', 'Pegawai\PengajuanController::store'); // Menyimpan pengajuan baru
+$routes->post('/Pegawai/store', 'PengajuanController::store'); // Menyimpan pengajuan baru
 $routes->get('/Pengajuan/edit/(:num)', 'Pegawai\PengajuanController::edit/$1'); // Menampilkan form untuk edit pengajuan
 $routes->post('/Pengajuan/update/(:num)', 'Pegawai\PengajuanController::update/$1'); // Mengupdate data pengajuan
 $routes->post('Pengajuan/delete/(:num)', 'Pegawai\PengajuanController::delete/$1');  // Route untuk hapus

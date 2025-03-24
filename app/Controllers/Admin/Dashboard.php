@@ -8,6 +8,8 @@ class Dashboard extends Controller
 {
     public function index()
     {
+
         return view('admin/Dashboard'); // Menampilkan view dashboard
+       
     }
 }   

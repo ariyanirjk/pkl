@@ -1,33 +1,32 @@
 <?php
 
-namespace App\Controllers\User;
+namespace App\Controllers\pegawai;
 
-use App\Models\PengajuanModel;
+use App\Models\PerjalananDinasModel;
 use CodeIgniter\Controller;
 
-class PengajuanDinasController extends Controller
+class PerjalananDinas extends Controller
 {
     protected $PengajuanModel;
     protected $session;
 
     public function __construct()
     {
-        $this->PengajuanModel = new PengajuanModel();
-        $this->session = \Config\Services::session();
+        $this->PerjalananDinasModel = new PerjalananDinasModel();
     }
 
     public function index()
     {
         // Pastikan user sudah login
-        if (!$this->session->get('is_logged_in')) {
+    $this->session = \Config\Services::session();
+        if (!$this->session->get('loggedIn')) {
             // Redirect ke halaman login user
-            return redirect()->to('/login');  // Ganti /login dengan URL yang benar
+            return redirect()->to('/Login');  // Ganti /login dengan URL yang benar
         }
 
-        $id_pegawai = $this->session->get('id_pegawai'); // Ambil ID pegawai dari session
-        $data['Pengajuan'] = $this->PengajuanModel->where('Id_Pegawai', $id_pegawai)->findAll(); // Ambil pengajuan hanya untuk user ini
-
-        return view('User/PengajuanDinas/Index', $data);
+        $id_pegawai = $this->session->get('userId'); // Ambil ID pegawai dari session
+        $data['perjalanan'] = $this->PerjalananDinasModel->where('Id_Pegawai', $id_pegawai)->findAll(); // Ambil pengajuan hanya untuk user ini
+        return view('pegawai/PerjalananDinas', $data);
     }
 
     public function new()  // Jika menggunakan route /PengajuanDinas/new
@@ -70,6 +69,6 @@ class PengajuanDinasController extends Controller
         }
 
         session()->setFlashdata('success', 'Pengajuan berhasil disimpan dan menunggu persetujuan admin.');
-        return redirect()->to('/User/PengajuanDinas');
+        return redirect()->to('PerjalananDinas');
     }
 }

@@ -1,5 +1,5 @@
-<?=$this->extend('Layout/Header'); ?>
-<?=$this->section('Content'); ?>
+<?= $this->extend('Layout/Header'); ?>
+<?= $this->section('Content'); ?>
 
 <!DOCTYPE html>
 <html lang="en">

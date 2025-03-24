@@ -25,7 +25,7 @@ $routes->setAutoRoute(true);
 
 //Pemanggilan Data Perjalanan Dinas
 $routes->get('/PerjalananDinas', 'Pegawai\PerjalananDinas::index');
-$routes->post('/PerjalananDinas/store', 'Pegawai\PerjalananDinas::store');
+$routes->post('/PerjalananDinas/store', 'Pegawai\PerjalananDinasController::store');
 $routes->post('/PerjalananDinas/update/(:num)', 'Pegawai\PerjalananDinas::update/$1');
 $routes->post('/PerjalananDinas/delete/(:num)', 'Pegawai\PerjalananDinas::delete/$1');
 
